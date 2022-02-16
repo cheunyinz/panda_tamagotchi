@@ -1,0 +1,236 @@
+/*Font face */
+
+@font-face {
+    font-family: "Farro";
+    src: url("../assets/fonts/farro_light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Farro";
+    src: url("../assets/fonts/farro_regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Farro";
+    src: url("../assets/fonts/farro_medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Farro";
+    src: url("../assets/fonts/farro_bold.ttf");
+    font-weight: 600;
+}
+
+/* ALGEMEEN */
+
+body {
+    font-family: "Farro, Helvetica";
+    padding: 1px;
+    margin: 0;
+    font-weight: 400;
+    background-color: #e9c386;
+}
+
+/* Voor het inloggen*/
+
+#name_input {
+    position: absolute;
+    background-color: transparent;
+    border-color: transparent;
+    padding-bottom: 8px;
+    border-bottom: solid black 8px;
+    border-radius: 8px;
+    text-align: center;
+    outline: transparent;
+    font-size: 30px;
+    left: 0;
+    right: 0;
+    top: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Farro', Helvetica;
+    font-weight: 300;
+    z-index: 3;
+}
+
+.foregroundstyle {
+    background-color: #e9c386;
+    position: absolute;
+    height: 1080px;
+    width: 1920px;
+    z-index: 2;
+}
+
+.foregroundtextstyle {
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 28px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.foregroundtextstyle h1,
+.foregroundtextstyle p {
+    text-align: center;
+    font-family: "Farro";
+}
+
+/* Na het inloggen */
+
+main {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    z-index: 1;
+}
+
+.disappear {
+    display: none;
+}
+
+
+
+/*SPECIFIEK*/
+
+.bars {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin: 8px 88px 0px 0px;
+}
+
+.bars h1 {
+    font-family: "Farro";
+    font-size: 28px;
+}
+
+
+.bars img {
+    width: 367.2px;
+    height: 68px;
+
+}
+
+#tutorial {
+    background-color: #d6d6dd;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 12px 8px 12px;
+    border-radius: 8px;
+}
+
+
+section:nth-of-type(4) p,
+h2 {
+    font-family: "Farro, Helvetica";
+}
+
+#panda_holder {
+    position: absolute;
+    top: 480px;
+    left: 770px;
+}
+
+p img {
+    height: 28px;
+}
+
+#panda {
+    height: 380px;
+    width: 380px;
+    position: absolute;
+
+}
+
+#panda_ogen {
+    height: 380px;
+    width: 380px;
+    position: relative;
+
+}
+
+.tutorial_en_questionmark {
+    position: absolute;
+    left: 88px;
+    top: 88px;
+}
+
+#question_mark {
+    height: 80px;
+    top: 10px;
+    cursor: pointer;
+    margin-bottom: 18px;
+}
+
+.objects {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 480px;
+    left: 480px;
+}
+
+
+.text_box {
+    position: absolute;
+    width: fit-content;
+    background-color: #dddddd;
+    text-align: center;
+    padding: 18px 18px 18px 18px;
+    border-radius: 2px;
+    font-family: 'Farro', Helvetica;
+    font-size: 28px;
+    top: 400px;
+    left: 770px;
+
+
+}
+
+#bamboo,
+#red_tshirt {
+    height: 180px;
+    width: 180px;
+    cursor: move;
+}
+
+#tutorial h1,
+#tutorial h2,
+#tutorial p {
+    font-family: "Farro";
+}
+
+#red_tshirt {
+    cursor: pointer;
+}
+
+
+#pandadefault {
+    font-family: 'Farro', Helvetica;
+}
+
+
+footer p,
+footer a {
+    font-family: "Farro";
+}
+
+footer p:last-child {
+    text-align: center;
+}
+
+/* Animaties */
+
+.jump {
+    animation: jump 1s forwards;
+}
+
+@keyframes jump {
+    40% {
+        transform: translateY(-15vh)
+    }
+}

@@ -1,0 +1,205 @@
+/*Font face */
+
+@font-face {
+    font-family: "Farro";
+    src: url("../assets/fonts/farro_light.ttf");
+    font-weight: 300;
+}
+
+@font-face{
+    font-family: "Farro";
+    src: url("../assets/fonts/farro_regular.ttf") ;
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "Farro";
+    src: url("../assets/fonts/farro_medium.ttf") ;
+    font-weight: 500;
+}
+
+@font-face{
+    font-family: "Farro";
+    src: url("../assets/fonts/farro_bold.ttf") ;
+    font-weight: 600;
+}
+
+/* ALGEMEEN */
+
+body {
+    font-family: "Farro, Helvetica";
+    padding: 1px;
+    margin: 0;
+    font-weight: 400;
+    background-color: #e9c386;
+}
+
+.foregroundstyle {
+    background-color: #868282;
+    opacity: 0.95;
+    position: absolute;
+    height: 1080px;
+    width: 1920px;
+    z-index: 2; 
+} 
+
+main {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    z-index: 1;
+}
+
+.disappear {
+    display: none; 
+}
+
+
+
+/*SPECIFIEK*/
+
+.bars {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin: 8px 18px 0px 0px;
+}
+
+
+.bars img {
+    width: 367.2px;
+    height: 68px;
+
+}
+
+#tutorial {
+    background-color: #d6d6dd;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 12px 8px 12px;
+    border-radius: 8px;
+    position: absolute;
+    top: 380px;
+}
+
+
+section:nth-of-type(4) p, h2 {
+    font-family: "Farro, Helvetica";
+}
+
+#panda_holder {
+    position: absolute;
+    top: 480px;
+    left: 770px;
+}
+
+p img {
+    height: 28px;
+}
+
+#panda {
+    height: 380px;
+    width: 380px;
+    position: absolute;
+   
+}
+
+#panda_ogen {
+    height: 380px;
+    width: 380px;
+    position: relative;
+
+}
+
+#question_mark {
+    height: 80px;
+    position: fixed;
+    top: 10px;
+    cursor: pointer;
+}
+
+.objects {
+    position: absolute;
+    background-color: black;
+    top: 120px;
+    left: 180px;
+}
+
+
+.text_box {
+    position: absolute;
+    width: fit-content;
+    background-color: #dddddd;
+    text-align: center;
+    padding: 18px 18px 18px 18px;
+    border-radius: 2px;
+    font-family: 'Farro', Helvetica;
+    font-size: 28px;
+    top: 400px;
+    left: 770px;
+    
+ 
+}
+
+#bamboo, #red_tshirt {
+    height: 180px;
+    width: 180px;
+    cursor: move;
+}
+
+#name_input{
+    position: absolute;
+    padding: 18px 18px 18px 18px;
+    border-color: transparent;
+    text-align: center;
+    outline: transparent;
+    font-size: 30px;
+    top: 200px;
+    left: 770px;
+    font-family: 'Farro', Helvetica;
+    font-weight: 300;
+    z-index: 3;
+}
+
+
+#pandadefault {
+    font-family: 'Farro', Helvetica;
+}
+
+#hupoints {
+    font-family: 'Farro';
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 580px;
+    top: 200px;
+    padding: 8px 8px 8px 8px;
+    background: black;
+    color: white;
+
+}
+
+#hapoints {
+    font-family: 'Farro';
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 680px;
+    top: 200px;
+    padding: 8px 8px 8px 8px;
+    background: black;
+    color: white;
+
+}
+
+/* Animaties */
+
+.jump{
+    animation: jump 1s forwards;
+}
+
+@keyframes jump{ 
+  40% { transform: translateY(-15vh) }
+}
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Panda</title>
+</head>
+
+<body>
+
+    <div id="foreground_text" class="foregroundtextstyle">
+        <h1>Welkom bij panda!</h1>
+        <p>Vul je naam in om te beginnen:</p>
+    </div>
+    <div id="foreground" class="foregroundstyle"></div>
+
+
+
+    <input type="text" id="name_input" placeholder="Wat is je naam?">
+
+    <header>
+    </header>
+
+    <main>
+
+        <section class="bars">
+            <h1>Status bars</h1>
+            <img src="./pictures/website_objects/happennis_bar/happennis_bar_1.png" alt="geluk bar" id="happennis_bar">
+            <img src="./pictures/website_objects/happennis_bar/happennis_bar_1.png" alt="honger bar" id="hunger_bar">
+        </section>
+
+        <section>
+            <figure id="panda_holder">
+                <img src="./pictures/panda/panda_default.png" alt="panda_default" id="panda">
+
+            </figure>
+            <p id="greeting_text"></p>
+            <p id="food_thanks_text"></p>
+        </section>
+        <section class="objects">
+            <img src="./pictures/objects/bamboo.png" alt="bamboo" id="bamboo">
+            <img src="./pictures/clothing/red_tshirt.png" alt="rood tshirt" id="red_tshirt">
+        </section>
+        <div class="tutorial_en_questionmark">
+            <img src="./pictures/website_objects/tutorial_button/question_button.png" alt="question mark"
+                id="question_mark">
+            <div id="tutorial" class="disappear">
+                <h1>Hoe werkt die spel?</h1>
+                <section class="tutorial_toetsen">
+                    <h2>Controls</h2>
+                    <p> Druk: <strong>w</strong> om hem te laten <strong>springen</strong> </p>
+                    <p>Sleep: <img src="./pictures/objects/bamboo_mini.png" alt="bamboo_foto"> om hem eten te geven </p>
+                    <p>Klik: <img src="./pictures/objects/tshirt_mini.png" alt="mini_tshirt">zodat hij een t-shirt
+                        krijgt </p>
+                </section>
+
+                <section class="tutorial_bars">
+                    <h2>Uitleg status bars</h2>
+                    <p><img src="./pictures/objects/bamboo_mini.png" alt="bamboo_foto">= energie bar</p>
+                    <p><img src="./pictures/objects/panda_head.png" alt="panda_head">= happenis bar</p>
+                    <p><strong>Let op:</strong> Om de <strong>15 seconden</strong> gaat de hunger en hapennis bar omlaag
+                    </p>
+                </section>
+            </div>
+        </div>
+
+        <audio src="./audio/eating_sound.mp3" id="eating_audio"></audio>
+        <div id="wtf">wtf</div>
+
+
+    </main>
+    <footer>
+        <p>Bronnen:</p>
+        <ul>
+            <li>
+                <a
+                    href="https://toppng.com/hd-transparent-images-pluspng-image-library-stock-panda-bear-clipart-PNG-free-PNG-Images_212318?search-result=panda">Panda</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=Tish3KkNnLc">Eet audio</a>
+            </li>
+        </ul>
+
+        <p>Gemaakt door Cheun Yin, 500849424, Roze P05 , Inleiding Programmeren</p>
+
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
